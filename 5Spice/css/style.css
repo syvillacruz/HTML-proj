@@ -45,16 +45,6 @@ section{
     padding:2rem 7%;
 }
 
-.heading{
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 1rem;
-    padding-bottom: 3.5rem;
-    font-size: 5rem;
-    letter-spacing: 4px;
-    font-family: 'Brush Script MT', cursive;
-}
-
 .heading span{
     color:#000000;
     text-transform: uppercase;
@@ -89,7 +79,7 @@ section{
 }
 
 .header .logo img{
-    height: 5rem;
+    height: 3.5rem;
     background-color: #830404;
 }
 
@@ -239,6 +229,19 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+}
+
+.about h1{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 4px;
+
+}
+.about span{
+    font-family:Brush Script MT, cursive;
+    text-transform: uppercase;
 }
 
 .about .row{
@@ -459,7 +462,14 @@ section{
     text-transform: none;
     background:none;
 }
-
+.blogs h1{
+     text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 4px;
+}
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
