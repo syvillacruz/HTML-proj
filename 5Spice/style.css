@@ -45,21 +45,13 @@ section{
     padding:2rem 7%;
 }
 
-.heading{
-    text-align: center;
-    color:#000000;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-}
-
 .heading span{
     color:#000000;
     text-transform: uppercase;
     text-align: right;
 }
 
-.btn{
+.home .btn{
     margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
@@ -69,7 +61,7 @@ section{
     cursor: pointer;
 }
 
-.btn:hover{
+.home .btn:hover{
     letter-spacing: .2rem;
 }
 
@@ -86,19 +78,23 @@ section{
     background-color: #830404;
 }
 
-.header .logo img{
-    height: 5rem;
+.logo{
+    height: 3.5rem;
     background-color: #830404;
 }
 
 .navbar{
     background-color: #830404;
 }
+.container-fluid img{
+    height: 10px;
+}
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
     background-color: #830404;
+    text-decoration: none;
 }
 
 .header .navbar a:hover{
@@ -158,6 +154,59 @@ section{
     color:var(--main-color);
 }
 
+.header .cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding:0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top:1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:var(--main-color);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+.header .cart-items-container .cart-item .content h1{
+    font-size: 4rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color:var(--main-color);
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -172,10 +221,10 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 7rem;
     text-transform: uppercase;
     color:  #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .home .content p{
@@ -186,20 +235,33 @@ section{
     color:#eee;
 }
 
+.about h1{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 4px;
+
+}
+.about span{
+    font-family:Brush Script MT, cursive;
+    text-transform: uppercase;
+}
+
 .about .row{
+    display: flex;
     align-items: center;
     background:var(--black);
     flex-wrap: wrap;
-    display:  flex;
-    background-color: #FFFFFF;
 }
 
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 30rem;
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 50%;
+    height: 280px;
 }
 .about .row .content{
     flex:1 1 45rem;
@@ -334,7 +396,7 @@ section{
 .review .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8;
-    color:#ccc;
+    color:#000000;
     padding:2rem 0;
 }
 
@@ -404,7 +466,14 @@ section{
     text-transform: none;
     background:none;
 }
-
+.blogs h1{
+     text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 4px;
+}
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
