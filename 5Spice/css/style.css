@@ -346,6 +346,59 @@ header .nav .menu{
     line-height: 1.8;
 }
 
+.aboutus h1{
+    text-align: left;
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: 4px;
+}
+
+.aboutus span{
+    font-family:Brush Script MT, cursive;
+    text-transform: uppercase;
+}
+
+.aboutus .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.aboutus .row .image{
+    flex:1 1 10rem;
+}
+
+.aboutus .row .image img{
+    width: 50%;
+    height: 550px;
+}
+.aboutus .row .image2 {
+    flex:1 1 10rem;
+}
+
+.aboutus .row .image2 img{
+    width: 100%;
+    height: 600px;
+}
+.aboutus .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.aboutus .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.aboutus .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
