@@ -47,88 +47,39 @@
           <a href="#">Services <i class="fas fa-angle-down"></i> </a>
           <ul class="sub-menu">
             <li class="sub-item"><a href="howto.html"><center>How to Order</center></a></li>
-            <li class="sub-item"><a href="suggest.html">Suggestions</a></li>
+            <li class="sub-item"><a href="suggest.html">Suggestions </a></li>
           </ul>
         </li>
   
-
 
 </header>
 
 <!-- header section ends -->
 
+<section class="contact" id="contact" style="background-color: #FFFFFF;">
 
+    <h1 class="heading"> <span>suggestions</span></h1>
 
+    <div class="row">
+        <form action="mailto:syvillacruz14@gmail.com">
+            <h3>let us know what more we can improve on!<br></h3>
+            <label>
+            <textarea name="input" id="input" cols="150" rows="20"></textarea>
+            </label>
+            <br>
+            <input type="submit" value="submit" class="btn">
+        </form>
 
+    </div>
 
-<!-- about us section starts  -->
-
-<section class="aboutus" id="aboutus" style="background-color: #FFFFFF;">
-
-    <h1>
-        <span> <br></span>
-    </h1>
-    <center>
-    <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 2</div>
-  <img src="images/howto1.png" style="width:90%; height:90%">
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 2</div>
-  <img src="images/howto.png" style="width:90%; height:90%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-</div>
-
-</center>
 </section>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 
 <!-- section ends -->
 
 
-<!-- blogs section ends -->
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -140,13 +91,13 @@ function showSlides(n) {
 
     <div class="links">
         <a href="index.html">home</a>
-        <a href="about.html">about</a>
+        <a href="#">about</a>
         <a href="#">menu</a>
+        <a href="#about">delivery</a>
         <a href="#about">services</a>
-        <a href="#">delivery</a>
     </div>
 
-
+</section>
 <!-- footer section ends -->
 
 
