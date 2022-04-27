@@ -301,6 +301,20 @@ header .nav .menu{
     color:#eee;
 }
 
+.home .content a{
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding:1rem 0;
+  color:var(--main-color);
+}
+
+.home .content a:hover {
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
 .about h1{
     text-align: center;
     padding-top: 1rem;
