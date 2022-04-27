@@ -409,6 +409,13 @@ header .nav .menu{
     line-height: 1.8;
 }
 
+.aboutus .row .content blockquote{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
